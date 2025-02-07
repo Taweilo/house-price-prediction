@@ -1,7 +1,6 @@
 # House Price Prediction - Multivariate analysis
-
-https://colab.research.google.com/drive/1nAZGn9_5sBbEXVxopBzEN99S-vcujlBe#scrollTo=UbH4jg1TS2df
-
+https://colab.research.google.com/drive/1phJRGMKEhjl2QvDxGGAn_ipegSqiK9kn?usp=drive_open#scrollTo=Z3QNJHL2K8Vx
+https://colab.research.google.com/drive/1LzZboEzm4pwKdYfzwvjmA9dtOqFMT6uM?usp=drive_open#scrollTo=42ea711e
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Taweilo/house-price-prediction-multivariate-analysis)
@@ -43,9 +42,13 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
    train: 30000 data<br>
    test:  20000 data<br>
   
-## 4. Modeling   
+## 4. Modeling 
 
-## 5. Evaluation
+## 5. Hyperparameter tuning
 
-## 6. Prediction
+## 6. Evaluation
+
+## 7. Deployment
+
+## 6. Future improvement
 
