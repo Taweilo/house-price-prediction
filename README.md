@@ -9,7 +9,7 @@ https://colab.research.google.com/drive/1LzZboEzm4pwKdYfzwvjmA9dtOqFMT6uM?usp=dr
 
 Badge [source](https://shields.io/)
 
- <img src="https://www.bouzaien.com/post/house-pricing-prediction/featured.png" width="600" height="400">
+ <img src="https://www.bouzaien.com/post/house-pricing-prediction/featured.png" width="600" height="200">
 This project will follow the Business Analysis (BA) workflow to address house price prediction using linear regression techniques. The business problem is creating a regression model that can predict house prices based on the provided features. Therefore, real estate agents can utilize this model to evaluate the property.
 
 ```
