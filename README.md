@@ -73,9 +73,9 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
 1. Define the Categorical variables
 2. Define X, y
 3. Split data (train: 80%, val: 10%, test: 10%)
-    -X_train, y_train: (1168, 79) (1168,)
-    -X_Val, y_val: (146, 79) (146,)
-    -X_test, y_test: (146, 79) (146,)
+   - X_train, y_train: (1168, 79) (1168,)
+   - X_Val, y_val: (146, 79) (146,)
+   - X_test, y_test: (146, 79) (146,)
    
 ## 4. Modeling 
 1. XGB
