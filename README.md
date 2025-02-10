@@ -33,33 +33,33 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
   - missing data
   - technical term
     
-1. Property Characteristics**  
-  - **MSSubClass**: Type of dwelling (e.g., 1-story, 2-story, duplex).  
-  - **MSZoning**: Zoning classification (Residential, Commercial, Industrial, etc.).  
-  - **LotFrontage**: Street-connected linear feet.  
-  - **LotArea**: Lot size in square feet.  
-  - **Street**: Type of road access (Paved or Gravel).  
-  - **Alley**: Alley access type (Paved, Gravel, or None).  
-  - **LotShape**: Shape of the lot (Regular, Irregular).  
-  - **LandContour**: Flatness of the land (Flat, Hillside, Depression).  
-  - **Utilities**: Available utilities (Public, Electricity only, etc.).  
-  - **LotConfig**: Lot location (Corner, Cul-de-sac, etc.).  
-  - **LandSlope**: Property slope (Gentle, Moderate, Severe).  
-  - **Neighborhood**: Physical location within Ames.  
+1. Property Characteristics
+   - **MSSubClass**: Type of dwelling (e.g., 1-story, 2-story, duplex).  
+   - **MSZoning**: Zoning classification (Residential, Commercial, Industrial, etc.).  
+   - **LotFrontage**: Street-connected linear feet.  
+   - **LotArea**: Lot size in square feet.  
+   - **Street**: Type of road access (Paved or Gravel).  
+   - **Alley**: Alley access type (Paved, Gravel, or None).  
+   - **LotShape**: Shape of the lot (Regular, Irregular).  
+   - **LandContour**: Flatness of the land (Flat, Hillside, Depression).  
+   - **Utilities**: Available utilities (Public, Electricity only, etc.).  
+   - **LotConfig**: Lot location (Corner, Cul-de-sac, etc.).  
+   - **LandSlope**: Property slope (Gentle, Moderate, Severe).  
+   - **Neighborhood**: Physical location within Ames.  
 
-2. Proximity & Condition**  
-  - **Condition1 & Condition2**: Proximity to railroads, streets, or parks.  
+2. Proximity & Condition
+   - **Condition1 & Condition2**: Proximity to railroads, streets, or parks.  
 
-3. Building Details**  
-  - **BldgType**: Type of dwelling (Single-family, Townhouse, Duplex).  
-  - **HouseStyle**: Architectural style (1-story, 2-story, Split-level).  
-  - **OverallQual & OverallCond**: Quality and condition of the house (1-10).  
-  - **YearBuilt & YearRemodAdd**: Year of construction and last remodel.  
+3. Building Details
+   - **BldgType**: Type of dwelling (Single-family, Townhouse, Duplex).  
+   - **HouseStyle**: Architectural style (1-story, 2-story, Split-level).  
+   - **OverallQual & OverallCond**: Quality and condition of the house (1-10).  
+   - **YearBuilt & YearRemodAdd**: Year of construction and last remodel.  
 
-4. Roof & Exterior**  
-  - **RoofStyle & RoofMatl**: Roof type and material.  
-  - **Exterior1st & Exterior2nd**: Primary and secondary exterior materials.  
-  - **MasVnrType**: Masonry veneer type (Brick, Stone, None).
+4. Roof & Exterior
+   - **RoofStyle & RoofMatl**: Roof type and material.  
+   - **Exterior1st & Exterior2nd**: Primary and secondary exterior materials.  
+   - **MasVnrType**: Masonry veneer type (Brick, Stone, None).
 
 ![the distribution of each numeric variable](https://github.com/user-attachments/assets/dcadbc3b-079a-4944-9d45-9d4950f50a13)
 
