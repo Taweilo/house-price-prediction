@@ -30,7 +30,7 @@ The goal of this project is to develop a predictive model for housing prices bas
 
 - Data resource: 
 
-The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview. Basic data analysis was performed to identify the shape of data, get column names, find missing values, and generate descriptive statistics. The pair plot demonstrated the relationship between variables. The distribution of the target variable was shown.
+The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview. Basic data analysis was performed to identify the shape of data, get column names, find missing values, and generate descriptive statistics. The distribution of the target variable was shown.
 
 - Summary: 
   - 80 features, 1460 instances (small dataset)
