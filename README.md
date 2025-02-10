@@ -1,10 +1,8 @@
 # House Price Prediction - Multivariate analysis
-https://colab.research.google.com/drive/1phJRGMKEhjl2QvDxGGAn_ipegSqiK9kn?usp=drive_open#scrollTo=Z3QNJHL2K8Vx
-https://colab.research.google.com/drive/1LzZboEzm4pwKdYfzwvjmA9dtOqFMT6uM?usp=drive_open#scrollTo=42ea711e
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10%2B-lightgrey)
-![GitHub last commit](https://img.shields.io/github/last-commit/Taweilo/house-price-prediction-multivariate-analysis)
-![GitHub repo size](https://img.shields.io/github/repo-size/Taweilo/house-price-prediction-multivariate-analysis)
+![GitHub last commit](https://img.shields.io/github/last-commit/Taweilo/house-price-prediction)
+![GitHub repo size](https://img.shields.io/github/repo-size/Taweilo/house-price-prediction)
 ![Type of ML](https://img.shields.io/badge/Type%20of%20ML-Regression%20-red)
 
 Badge [source](https://shields.io/)
