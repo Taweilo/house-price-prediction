@@ -93,7 +93,7 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
 - Optuna library to optimize the best hyperparameter for each model. Optuna primarily uses a Bayesian optimization approach, specifically the Tree-structured Parzen Estimator (TPE), to optimize hyperparameters efficiently. Bayesian optimization is an intelligent search strategy that models the objective function to select promising hyperparameter values instead of randomly guessing.
 - Check hyperparameter tuning file on the repo
 - XGB Hyperparameter  
-`best_params = {
+```best_params = {
     "reg_lambda": 0.12688228439958346,
     "reg_alpha": 0.000889636209268654,
     "colsample_bytree": 0.613956213715118,
@@ -105,9 +105,9 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
     "tree_method": "hist",  # Using GPU for speedup
     "device": "cuda",  # Use GPU
     "random_state": 42
-}`
+}```
 - LightGBM Hyperparameter
-`best_params = {
+```best_params = {
     "reg_lambda": 2.0246287271463874,
     "reg_alpha": 0.008333484840564514,
     "colsample_bytree": 0.5299443544711497,
@@ -124,9 +124,9 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
     "cat_smooth": 4.350099519287858,
     "random_state": 42,
     "verbose": -1
-}`
+}```
 - CatBoost Hyperparameter
-`best_params = {
+```best_params = {
     'max_depth': 5,
     'learning_rate': 0.1295643155523358,
     'n_estimators': 304,
@@ -139,7 +139,7 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
     "random_seed": 42,
     "task_type": "GPU",  # Use GPU instead of CPU
     "nan_mode": "Min"  # CatBoost automatically handles NaN
-}`
+}```
 
 ## 6. Evaluation
 | Model     | MSE (Mean Squared Error) | R² Score |
@@ -153,7 +153,7 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
 
 ## 7. Deployment
 Load the model ("lgb_model.pkl") for inferencing
-`
+```
 import joblib
 import numpy as np
 import pandas as pd
@@ -185,7 +185,7 @@ test_results_df = pd.DataFrame(test_results)
 
 # Display the table for test set evaluation
 print(test_results_df)
-`
+```
 ## 6. Future improvement
 - Increase Data Volume: Collect more data to enhance model generalization and performance.
 - Feature Selection & Dimensionality Reduction: Identify and remove less relevant features to improve efficiency and reduce overfitting.
