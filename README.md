@@ -11,10 +11,15 @@ Badge [source](https://shields.io/)
 This project will follow the Business Analysis (BA) workflow to address house price prediction using linear regression techniques. The business problem is creating a regression model that can predict house prices based on the provided features. Therefore, real estate agents can utilize this model to evaluate the property.
 
 ```
-├── Image                       
+├── Data/  
+│   ├── train.csv                                     <- Training dataset  
+│   ├── data_description.txt                          <- Description of dataset features  
 │
-├── Code_USA_House_Price_Prediction.ipynb             <- code
-├── LICENSE                                           <- MIT license
+├── House_Price_Prediction.ipynb                      <- Code to build the model  
+├── LICENSE                                           <- MIT license  
+├── hyperparameter_tuning.ipynb                       <- Code for hyperparameter tuning  
+├── lgb_model.pkl                                     <- Trained model  
+
 
 ```
 
@@ -151,16 +156,29 @@ Load the model ("lgb_model.pkl") for inferencing
 `
 import joblib
 import numpy as np
+import pandas as pd
+import requests
 
-# Step 1: Load the saved models
-lgb_model = joblib.load("lgb_model.pkl")
+# Step 1: Download the model from GitHub
+model_url = "https://github.com/Taweilo/house-price-prediction/raw/main/lgb_model.pkl"
+model_path = "lgb_model.pkl"
+
+# Download the model file
+response = requests.get(model_url)
+with open(model_path, "wb") as f:
+    f.write(response.content)
+
+# Step 2: Load the saved model
+lgb_model = joblib.load(model_path)
 
 # Initialize a list to store test results
 test_results = []
 
+# Step 3: Make predictions
 lgb_test_pred = lgb_model.predict(X_test)
-# Combine all predictions using the best weights (ensemble) for the test set
-test_results.append(evaluate_model(y_test, lgb_test_pred , 'LightGBM'))
+
+# Evaluate the model performance
+test_results.append(evaluate_model(y_test, lgb_test_pred, 'LightGBM'))
 
 # Convert the test results list to a DataFrame for better readability
 test_results_df = pd.DataFrame(test_results)
