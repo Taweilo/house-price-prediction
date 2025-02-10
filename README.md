@@ -147,9 +147,29 @@ The dataset was loaded via Colab. The dataset is from Kaggle: https://www.kaggle
 - LightGBM on test dataset:   MSE = 1.465984e+09  R² Score = 0.844193
 
 ## 7. Deployment
+Load the model ("lgb_model.pkl") for inferencing
+`
+import joblib
+import numpy as np
 
+# Step 1: Load the saved models
+lgb_model = joblib.load("lgb_model.pkl")
+
+# Initialize a list to store test results
+test_results = []
+
+lgb_test_pred = lgb_model.predict(X_test)
+# Combine all predictions using the best weights (ensemble) for the test set
+test_results.append(evaluate_model(y_test, lgb_test_pred , 'LightGBM'))
+
+# Convert the test results list to a DataFrame for better readability
+test_results_df = pd.DataFrame(test_results)
+
+# Display the table for test set evaluation
+print(test_results_df)
+`
 ## 6. Future improvement
-- Collect more data
-- Dimension reduction: reduce the features for better 
-- Realize the the domain knowledge: 
+- Increase Data Volume: Collect more data to enhance model generalization and performance.
+- Feature Selection & Dimensionality Reduction: Identify and remove less relevant features to improve efficiency and reduce overfitting.
+- Leverage Domain Knowledge: Use expert insights to refine data preprocessing, including better imputation strategies.
 
